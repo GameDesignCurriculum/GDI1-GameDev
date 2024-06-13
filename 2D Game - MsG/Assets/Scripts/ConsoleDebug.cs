@@ -7,7 +7,7 @@ public class ConsoleDebug : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		// Appears in Console
+		// Apferet in Console
     }
 
     // Update is called once per frame

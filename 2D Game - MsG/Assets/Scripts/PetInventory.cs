@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodInventory : MonoBehaviour
+public class PetInventory : MonoBehaviour
 {
     // Variables
     public bool adoptPet = false;
 
     //Class defining properties of food
-    public class Food
+    public class Pet
     {
         public string name;
         public int amount;
     }
 
     // Create instances of each food item with class properties
-    Food cat = new Food();
-    Food dog = new Food();
-    Food rabbit = new Food();
-    Food hamster = new Food();
-    Food feret = new Food();
+    Pet cat = new Pet();
+    Pet dog = new Pet();
+    Pet rabbit = new Pet();
+    Pet hamster = new Pet();
+    Pet feret = new Pet();
 
     // Do something when the sprite is clicked
     void OnMouseDown()
@@ -32,19 +32,19 @@ public class FoodInventory : MonoBehaviour
     void Start()
     {   
         // Set each food item's initial values
-        cat.name = "cat";
+        cat.name = "Cat";
         cat.amount = 3;
 
-        dog.name = "dog";
+        dog.name = "Dog";
         dog.amount = 4;
 
-        rabbit.name = "rabbit";
+        rabbit.name = "Rabbit";
         rabbit.amount = 2;
 
-        hamster.name = "hamster";
+        hamster.name = "Hamster";
         hamster.amount = 1;
 
-        feret.name = "feret";
+        feret.name = "Feret";
         feret.amount = 0;
     }
 
@@ -55,25 +55,16 @@ public class FoodInventory : MonoBehaviour
         {
             // Update inventory
             cat.amount += 1;
-            dog.amount -= 1;
-            rabbit.amount -= 1;
-            hamster.amount -= 1;
+            dog.amount += 1;
+            rabbit.amount += 1;
+            hamster.amount += 1;
             feret.amount += 1;
 
             // Print current inventory status to console
             Debug.Log(cat.name + " = " +  cat.amount);
-            if (dog.amount > -1)
-            {
-                Debug.Log(dog.name + " = " +  dog.amount);
-            }
-            if (rabbit.amount > -1)
-            {
-                Debug.Log(rabbit.name + " = " + rabbit.amount);
-            }
-            if (hamster.amount > -1)
-            {
-                Debug.Log(hamster.name + " = " +  hamster.amount);
-            }
+            Debug.Log(dog.name + " = " +  dog.amount);
+            Debug.Log(rabbit.name + " = " + rabbit.amount);
+            Debug.Log(hamster.name + " = " +  hamster.amount);
             Debug.Log(feret.name + " = " + feret.amount);
 
             // Change Boolean `adoptPet` back to false value
@@ -81,9 +72,3 @@ public class FoodInventory : MonoBehaviour
         }
     }
 }
-
-/*
-
-    BRIEFLY DESCRIBE YOUR OBSERVATIONS HERE AFTER TESTING IN UNITY
-
-*/
