@@ -294,7 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d105811215de74cbef421a7759116d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myText: Enter Text Here
+  myText: This is awesome!
+  speed: 2.3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

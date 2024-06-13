@@ -7,7 +7,7 @@ public class TraceVariables : MonoBehaviour
 	public string myText = "Enter Text Here";
 	private int coins = 0;
 	private bool isClicked = false;
-	private float speed = 2.3f;
+	public float speed = 3.5f;
 	
 	// This additional function does something if the player clicks the sprite
 	void OnMouseDown()
@@ -27,7 +27,7 @@ public class TraceVariables : MonoBehaviour
     {
 		if (isClicked == true)    // if (isClicked) is a shorthand way to write this line
 		{
-			coins = coins + 1;    // coins++; is a shorthand way to write this line
+			coins = coins + 2;    // coins++; is a shorthand way to write this line
 			Debug.Log(coins);
 			isClicked = false;
 		}
