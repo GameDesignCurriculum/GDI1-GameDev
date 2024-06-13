@@ -14,7 +14,7 @@ public class Sprite : MonoBehaviour
     void Update()
         {
         Vector2 position = transform.position;
-        position += Vector2.right * speed * Time.deltaTime;
+        position += Vector2.left +Vector2.up * speed * Time.deltaTime;
         transform.position = position;
         }
     }
