@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 402216243}
   - component: {fileID: 402216242}
   - component: {fileID: 402216241}
-  - component: {fileID: 402216240}
+  - component: {fileID: 402216245}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -143,19 +143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &402216240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402216239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81e55182c4e9fe44dbe88b3bd2c08a71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
 --- !u!61 &402216241
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -295,6 +282,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402216245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402216239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d105811215de74cbef421a7759116d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myText: Enter Text Here
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
